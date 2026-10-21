@@ -1,17 +1,7 @@
-// 1. Actualizar el año dinámicamente
-document.querySelectorAll("[data-year]").forEach(el => {
-    el.textContent = new Date().getFullYear();
-});
 
-// 2. Marcar el enlace activo en la barra de navegación
-const currentFile = location.pathname.split("/").pop() || "index.html";
-document.querySelectorAll(".navbar .nav-link").forEach(link => {
-    if (link.getAttribute("href") === currentFile) {
-        link.classList.add("active");
-    }
-});
 
-// 3. Botón de "Volver arriba" (Back to Top)
+
+//Botón de "Volver arriba" (Back to Top)
 const backTop = document.getElementById("backTop");
 
 if (backTop) {
@@ -23,7 +13,7 @@ if (backTop) {
     });
 }
 
-// 4. Filtro de horarios por día
+// Filtro de horarios por día
 const dayFilter = document.getElementById("dayFilter");
 if (dayFilter) {
     dayFilter.addEventListener("change", () => {
@@ -33,22 +23,8 @@ if (dayFilter) {
     });
 }
 
-// 5. Modal de galería con Bootstrap
-const galleryModalElement = document.getElementById("galleryModal");
-if (galleryModalElement) {
-    const galleryModal = new bootstrap.Modal(galleryModalElement);
-    document.querySelectorAll(".gallery-item").forEach(item => {
-        item.addEventListener("click", () => {
-            const image = document.getElementById("galleryModalImage");
-            image.src = item.dataset.image;
-            image.alt = item.dataset.caption;
-            document.getElementById("galleryCaption").textContent = item.dataset.caption;
-            galleryModal.show();
-        });
-    });
-}
 
-// 6. Validación de formulario y preselección de plan por URL
+//  Validación de formulario y preselección de plan por URL
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
     const planSelect = document.getElementById("plan");
