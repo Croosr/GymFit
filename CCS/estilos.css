@@ -1,4 +1,5 @@
 
+/* Variables reutilizables de color; las declaraciones posteriores pueden sobrescribir las anteriores. */
 :root {
     --black: #141414;
     --surface: #242424;
@@ -14,11 +15,13 @@
     box-sizing: border-box;
 }
 
+/* Comportamiento general del desplazamiento. */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 85px;
 }
 
+/* Fondo, tipografía y espaciado general. */
 body {
     margin: 0;
     background: var(--black);
@@ -31,6 +34,7 @@ a {
     text-decoration: none;
 }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar {
     padding: 15px 0;
     background: rgba(20, 20, 20, 0.96);
@@ -38,35 +42,42 @@ a {
     backdrop-filter: blur(12px);
 }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar-brand {
     color: white;
     font-size: 1.35rem;
     letter-spacing: 1px;
 }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar-brand span:first-child {
     color: var(--blue-light);
 }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar .nav-link {
     color: #F5F5F5;
     font-size: 0.9rem;
     padding: 8px 10px;
 }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
     color: var(--blue-light);
 }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar-toggler {
     border-color: var(--border);
 }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.15rem rgba(255, 121, 0, 0.3);
 }
 
+/* Apariencia y estados de interacción de los botones. */
 .btn-primary {
     background: var(--blue);
     border-color: var(--blue);
@@ -74,16 +85,19 @@ a {
     font-weight: 700;
 }
 
+/* Apariencia y estados de interacción de los botones. */
 .btn-primary:hover {
     background: #E56700;
     border-color: #E56700;
     transform: translateY(-2px);
 }
 
+/* Apariencia y estados de interacción de los botones. */
 .btn-outline-light:hover {
     color: var(--black);
 }
 
+/* Presentación principal, imágenes y textos destacados. */
 .hero {
     position: relative;
     display: flex;
@@ -93,17 +107,20 @@ a {
     background: #141414 url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=90") center/cover no-repeat;
 }
 
+/* Presentación principal, imágenes y textos destacados. */
 .hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, rgba(20, 20, 20, 0.97), rgba(20, 20, 20, 0.55));
 }
 
+/* Presentación principal, imágenes y textos destacados. */
 .hero-content {
     position: relative;
     z-index: 1;
 }
 
+/* Presentación principal, imágenes y textos destacados. */
 .hero h1,
 .page-header h1 {
     font-size: clamp(3rem, 7vw, 5.8rem);
@@ -112,11 +129,13 @@ a {
     letter-spacing: -2px;
 }
 
+/* Presentación principal, imágenes y textos destacados. */
 .hero h1 span,
 .page-header h1 span {
     color: var(--blue-light);
 }
 
+/* Presentación principal, imágenes y textos destacados. */
 .hero-description {
     max-width: 570px;
     margin: 24px 0 30px;
@@ -124,10 +143,12 @@ a {
     font-size: 1.1rem;
 }
 
+/* Espaciado y jerarquía visual de las secciones. */
 .section-padding {
     padding: 90px 0;
 }
 
+/* Espaciado y jerarquía visual de las secciones. */
 .section-tag {
     margin-bottom: 12px;
     color: var(--blue-light);
@@ -136,17 +157,20 @@ a {
     letter-spacing: 2px;
 }
 
+/* Espaciado y jerarquía visual de las secciones. */
 .section-title {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
 }
 
+/* Espaciado y jerarquía visual de las secciones. */
 .section-description {
     max-width: 650px;
     margin: 0 auto;
     color: var(--muted);
 }
 
+/* Tarjetas de características y servicios. */
 .feature-card,
 .price-card,
 .trainer-card,
@@ -160,6 +184,7 @@ a {
     transition: transform 0.25s, border-color 0.25s;
 }
 
+/* Tarjetas de características y servicios. */
 .feature-card:hover,
 .price-card:hover,
 .trainer-card:hover {
@@ -167,6 +192,7 @@ a {
     border-color: rgba(255, 121, 0, 0.6);
 }
 
+/* Tarjetas de características y servicios. */
 .feature-card > i {
     display: inline-block;
     margin-bottom: 18px;
@@ -174,6 +200,7 @@ a {
     font-size: 2rem;
 }
 
+/* Tarjetas de características y servicios. */
 .feature-card h3,
 .trainer-card h3 {
     margin-bottom: 12px;
@@ -181,12 +208,14 @@ a {
     font-weight: 700;
 }
 
+/* Tarjetas de características y servicios. */
 .feature-card p,
 .trainer-card p,
 .muted-copy {
     color: var(--muted);
 }
 
+/* Espaciado y jerarquía visual de las secciones. */
 .promo-section {
     padding: 75px 0;
     background: linear-gradient(110deg, #141414, #141414);
@@ -194,15 +223,18 @@ a {
     border-bottom: 1px solid var(--border);
 }
 
+/* Espaciado y jerarquía visual de las secciones. */
 .promo-section h2 {
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     font-weight: 800;
 }
 
+/* Espaciado y jerarquía visual de las secciones. */
 .promo-section p:not(.section-tag) {
     color: var(--muted);
 }
 
+/* Distribución, enlaces e identidad del pie de página. */
 .footer {
     padding: 28px 0;
     background: #141414;
@@ -210,24 +242,29 @@ a {
     font-size: 0.9rem;
 }
 
+/* Distribución, enlaces e identidad del pie de página. */
 .footer p {
     margin: 0;
 }
 
+/* Distribución de las páginas interiores. */
 .page-content {
     padding-top: 72px;
 }
 
+/* Distribución de las páginas interiores. */
 .page-header {
     padding: 100px 0 70px;
     background: radial-gradient(ellipse at 80% 20%, rgba(255, 121, 0, 0.18), transparent 45%), var(--black);
     border-bottom: 1px solid var(--border);
 }
 
+/* Distribución de las páginas interiores. */
 .page-header h1 {
     font-size: clamp(2.8rem, 6vw, 5rem);
 }
 
+/* Distribución de las páginas interiores. */
 .page-header p:last-child {
     max-width: 620px;
     color: var(--muted);
@@ -239,11 +276,13 @@ a {
     font-weight: 700;
 }
 
+/* Presentación de las zonas de entrenamiento. */
 .service-card {
     overflow: hidden;
     padding: 0 0 28px;
 }
 
+/* Presentación de las zonas de entrenamiento. */
 .service-card img {
     width: 100%;
     height: 220px;
@@ -251,50 +290,59 @@ a {
     object-fit: cover;
 }
 
+/* Presentación de las zonas de entrenamiento. */
 .service-card h3,
 .service-card p {
     margin-right: 25px;
     margin-left: 25px;
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price-card {
     position: relative;
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price-card.featured {
     background: linear-gradient(160deg, rgba(255, 121, 0, 0.15), var(--surface) 60%);
     border-color: var(--blue);
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price-card h3 {
     font-size: 1.6rem;
     font-weight: 800;
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price {
     margin: 20px 0;
     font-size: 2rem;
     font-weight: 800;
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price small {
     color: var(--muted);
     font-size: 0.9rem;
     font-weight: 400;
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price-card ul {
     margin: 25px 0;
     padding: 0;
     list-style: none;
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price-card li {
     padding: 10px 0;
     color: #F5F5F5;
     border-bottom: 1px solid var(--border);
 }
 
+/* Presentación del precio y beneficios de las membresías. */
 .price-card li::before {
     margin-right: 10px;
     color: var(--blue-light);
@@ -313,17 +361,20 @@ a {
     font-weight: 800;
 }
 
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card {
     overflow: hidden;
     padding: 0;
 }
 
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card img {
     width: 100%;
     height: 320px;
     object-fit: cover;
 }
 
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-info {
     padding: 25px;
 }
@@ -336,12 +387,14 @@ a {
     color: #F5F5F5;
 }
 
+/* Estilos de horarios conservados de versiones anteriores. */
 .schedule-wrap {
     overflow: hidden;
     border: 1px solid var(--border);
     border-radius: 16px;
 }
 
+/* Estilos de horarios conservados de versiones anteriores. */
 .schedule-table {
     margin: 0;
     --bs-table-bg: var(--surface);
@@ -349,6 +402,7 @@ a {
     --bs-table-border-color: var(--border);
 }
 
+/* Estilos de horarios conservados de versiones anteriores. */
 .schedule-table th {
     background: var(--surface-light);
     color: var(--blue-light);
@@ -356,6 +410,7 @@ a {
     text-transform: uppercase;
 }
 
+/* Estilos de horarios conservados de versiones anteriores. */
 .schedule-table td,
 .schedule-table th {
     padding: 17px;
@@ -365,6 +420,7 @@ a {
     min-width: 210px;
 }
 
+/* Apariencia y estados de los campos del formulario. */
 .form-select,
 .form-control {
     padding: 12px;
@@ -373,6 +429,7 @@ a {
     color: var(--white);
 }
 
+/* Apariencia y estados de los campos del formulario. */
 .form-select:focus,
 .form-control:focus {
     background-color: #141414;
@@ -381,20 +438,24 @@ a {
     box-shadow: 0 0 0 0.2rem rgba(255, 121, 0, 0.15);
 }
 
+/* Apariencia y estados de los campos del formulario. */
 .form-control::placeholder {
     color: #B8B8B8;
 }
 
+/* Apariencia y estados de los campos del formulario. */
 .form-label,
 .form-check-label {
     color: #F5F5F5;
 }
 
+/* Apariencia y estados de los campos del formulario. */
 .form-check-input {
     background-color: #141414;
     border-color: #404040;
 }
 
+/* Apariencia y estados de los campos del formulario. */
 .form-check-input:checked {
     background-color: var(--blue);
     border-color: var(--blue);
@@ -404,24 +465,28 @@ a {
     color: #ff9ca8;
 }
 
+/* Colores de los mensajes de resultado. */
 .alert-success {
     background: rgba(30, 170, 100, 0.13);
     border-color: rgba(30, 170, 100, 0.35);
     color: #a6f0c8;
 }
 
+/* Colores de los mensajes de resultado. */
 .alert-danger {
     background: rgba(220, 53, 69, 0.12);
     border-color: rgba(220, 53, 69, 0.3);
     color: #ffb3bc;
 }
 
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
 }
 
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -432,6 +497,7 @@ a {
     text-align: left;
 }
 
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-item img {
     display: block;
     width: 100%;
@@ -440,10 +506,12 @@ a {
     transition: transform 0.35s;
 }
 
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-item:hover img {
     transform: scale(1.05);
 }
 
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-item span {
     position: absolute;
     inset: auto 0 0;
@@ -453,36 +521,43 @@ a {
     font-weight: 700;
 }
 
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-modal {
     background: var(--surface);
     border: 1px solid var(--border);
     color: var(--white);
 }
 
+/* Presentación de información de contacto. */
 .contact-info {
     padding: 28px;
 }
 
+/* Presentación de información de contacto. */
 .contact-line {
     display: flex;
     gap: 15px;
     margin: 25px 0;
 }
 
+/* Presentación de información de contacto. */
 .contact-line > i {
     color: var(--blue-light);
     font-size: 1.4rem;
 }
 
+/* Presentación de información de contacto. */
 .contact-line strong {
     display: block;
 }
 
+/* Presentación de información de contacto. */
 .contact-line p {
     margin: 4px 0 0;
     color: var(--muted);
 }
 
+/* Contenedor y acciones del mapa. */
 .map-frame {
     overflow: hidden;
     height: 230px;
@@ -491,12 +566,14 @@ a {
     border-radius: 14px;
 }
 
+/* Contenedor y acciones del mapa. */
 .map-frame iframe {
     width: 100%;
     height: 100%;
     border: 0;
 }
 
+/* Botones flotantes y colores de redes sociales. */
 .social-float {
     position: fixed;
     right: 22px;
@@ -507,6 +584,7 @@ a {
     gap: 10px;
 }
 
+/* Botones flotantes y colores de redes sociales. */
 .social-float a {
     display: grid;
     width: 44px;
@@ -521,16 +599,19 @@ a {
     transition: transform 0.2s, background 0.2s;
 }
 
+/* Botones flotantes y colores de redes sociales. */
 .social-float a:hover {
     transform: translateY(-3px);
     background: var(--blue);
     color: white;
 }
 
+/* Botones flotantes y colores de redes sociales. */
 .social-float .whatsapp:hover {
     background: #25d366;
 }
 
+/* Botón flotante para volver arriba. */
 .back-top {
     position: fixed;
     right: 22px;
@@ -566,6 +647,7 @@ a {
 }
 
 /* EFECTO AL PASAR EL RATÓN */
+/* Botón flotante para volver arriba. */
 .back-top:hover {
     background-color: #E56700;
     color: #ffffff;
@@ -574,11 +656,14 @@ a {
 }
 
 /* EFECTO AL PULSAR */
+/* Botón flotante para volver arriba. */
 .back-top:active {
     transform: scale(0.92);
 }
 
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media (max-width: 480px) {
+/* Botón flotante para volver arriba. */
     .back-top {
         right: 14px;
         bottom: 16px;
@@ -588,41 +673,52 @@ a {
     }
 }
 
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media (max-width: 991px) {
+/* Navegación fija, enlaces, marca y menú adaptable. */
     .navbar-collapse {
         padding: 15px 0;
     }
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
     .navbar .nav-link {
         padding: 10px 0;
     }
 
+/* Presentación principal, imágenes y textos destacados. */
     .hero {
         min-height: 650px;
     }
 
+/* Espaciado y jerarquía visual de las secciones. */
     .section-padding {
         padding: 70px 0;
     }
 
+/* Distribución de las páginas interiores. */
     .page-header {
         padding: 80px 0 55px;
     }
 }
 
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media (max-width: 767px) {
+/* Presentación principal, imágenes y textos destacados. */
     .hero h1 {
         font-size: 3.4rem;
     }
 
+/* Distribución y efectos de las imágenes de la galería. */
     .gallery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+/* Distribución y efectos de las imágenes de la galería. */
     .gallery-item img {
         height: 220px;
     }
 
+/* Tarjetas de características y servicios. */
     .feature-card,
     .price-card,
     .form-panel,
@@ -630,39 +726,48 @@ a {
         padding: 23px;
     }
 
+/* Presentación de las zonas de entrenamiento. */
     .service-card {
         padding: 0 0 24px;
     }
 }
 
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media (max-width: 480px) {
+/* Presentación principal, imágenes y textos destacados. */
     .hero h1 {
         font-size: 2.8rem;
     }
 
+/* Presentación principal, imágenes y textos destacados. */
     .hero-description {
         font-size: 1rem;
     }
 
+/* Distribución y efectos de las imágenes de la galería. */
     .gallery-grid {
         grid-template-columns: 1fr;
     }
 
+/* Distribución y efectos de las imágenes de la galería. */
     .gallery-item img {
         height: 250px;
     }
 
+/* Botones flotantes y colores de redes sociales. */
     .social-float {
         right: 14px;
         bottom: 76px;
     }
 
+/* Botones flotantes y colores de redes sociales. */
     .social-float a,
     .back-top {
         width: 40px;
         height: 40px;
     }
 
+/* Botón flotante para volver arriba. */
     .back-top {
         right: 14px;
         bottom: 18px;
@@ -676,41 +781,73 @@ a {
 
 
 /* Mejoras de identidad y accesibilidad */
+/* Variables reutilizables de color; las declaraciones posteriores pueden sobrescribir las anteriores. */
 :root { --blue:#FF7900; --blue-light:#FFAA42; --green-whatsapp:#25d366; }
+/* Fondo, tipografía y espaciado general. */
 body { background-color:#141414; }
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar-brand.fit-brand { display:inline-flex; align-items:center; gap:.55rem; letter-spacing:.06em; }
+/* Identidad visual de la marca. */
 .fit-brand .brand-emblem { display:inline-grid; place-items:center; width:36px; height:36px; border-radius:11px; background:linear-gradient(145deg,#FF7900,#E56700); color:#fff; font-weight:900; box-shadow:0 4px 16px #FF790045; }
+/* Botones flotantes y colores de redes sociales. */
 .social-float a.whatsapp, .social-float a.whatsapp:hover {background:#25d366; border-color:#25d366; color:#fff;}
+/* Botones flotantes y colores de redes sociales. */
 .social-float a.whatsapp:hover {filter:brightness(1.1)}
+/* Botón flotante para volver arriba. */
 .back-top {opacity:1!important;visibility:visible!important;pointer-events:auto!important;z-index:1100;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-item {height:min(78vh,700px);min-height:460px;position:relative;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-item img {width:100%;height:100%;object-fit:cover;filter:brightness(.42);}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-caption {top:50%;bottom:auto;transform:translateY(-50%);text-align:left;max-width:720px;left:max(7%,calc((100vw - 1140px)/2));right:7%;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-caption h2 {font-size:clamp(2.2rem,5vw,4.5rem);font-weight:800;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-caption p {font-size:1.12rem;max-width:580px;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-control-prev,.hero-carousel .carousel-control-next {width:6%;}
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-fit {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-fit img {width:100%;height:230px;object-fit:cover;border-radius:14px;transition:transform .25s;cursor:pointer;}
+/* Distribución y efectos de las imágenes de la galería. */
 .gallery-fit img:hover {transform:scale(1.025);}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card {height:100%;border:1px solid #404040;background:#242424;color:#F5F5F5;border-radius:20px;box-shadow:0 12px 30px #0003;}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card.featured {border-color:#FF7900;box-shadow:0 0 0 1px #FF790066,0 14px 34px #0005;}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card-body {display:flex;flex-direction:column;padding:28px;}
+/* Apariencia y estados de interacción de los botones. */
 .plan-cards .card .btn {margin-top:auto;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer {background:#141414;border-top:1px solid #404040;padding:52px 0 25px;color:#F5F5F5;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer h3 {font-size:1.08rem;color:white;margin-bottom:18px;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer a {color:#F5F5F5;text-decoration:none;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer a:hover {color:#FFAA42;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer .footer-links {display:flex;flex-direction:column;gap:10px;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer .form-control {background:#242424;color:#fff;border:1px solid #404040;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer .form-control::placeholder {color:#B8B8B8;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer .footer-bottom {border-top:1px solid #404040;margin-top:30px;padding-top:20px;}
+/* Contenedor y acciones del mapa. */
 .map-actions {display:flex;flex-wrap:wrap;gap:10px;margin:16px 0;}
 #geoStatus {min-height:24px;}
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:767px){.gallery-fit{grid-template-columns:repeat(2,minmax(0,1fr));}.hero-carousel .carousel-caption{left:10%;right:10%;}.hero-carousel .carousel-item{min-height:430px;}}
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:480px){.gallery-fit{grid-template-columns:1fr;}.hero-carousel .carousel-control-prev,.hero-carousel .carousel-control-next{width:9%;}}
 
 
 /* FITGYM | Paleta naranja y negro, navegación y accesibilidad */
+/* Variables reutilizables de color; las declaraciones posteriores pueden sobrescribir las anteriores. */
 :root {
   --black: #141414;
   --surface: #242424;
@@ -723,142 +860,267 @@ body { background-color:#141414; }
   --bs-primary: #FF7900;
   --bs-primary-rgb: 255,121,0;
 }
+/* Comportamiento general del desplazamiento. */
 html {scroll-behavior:smooth;scroll-padding-top:110px;}
+/* Fondo, tipografía y espaciado general. */
 body {background:#141414;color:#F5F5F5;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar.fixed-top {background:rgba(20,20,20,.98);border-bottom:1px solid #404040;z-index:1050;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar .nav-link {color:#F5F5F5;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar .nav-link:hover,.navbar .nav-link.active {color:#FFAA42;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar-brand.fit-brand span:last-child {color:#F5F5F5;}
+/* Identidad visual de la marca. */
 .fit-brand .brand-emblem {background:linear-gradient(145deg,#FFAA42,#E56700);color:#141414;box-shadow:0 5px 18px #FF790044;}
+/* Apariencia y estados de interacción de los botones. */
 .btn-primary,.btn-blue,.btn.btn-blue {background:#FF7900!important;border-color:#FF7900!important;color:#141414!important;font-weight:800;opacity:1!important;}
+/* Apariencia y estados de interacción de los botones. */
 .btn-primary:hover,.btn-blue:hover {background:#FFAA42!important;border-color:#FFAA42!important;color:#141414!important;}
+/* Apariencia y estados de interacción de los botones. */
 .btn-outline-primary {border-color:#FF7900;color:#FFAA42;}
+/* Apariencia y estados de interacción de los botones. */
 .btn-outline-primary:hover {background:#FF7900;color:#141414;}
+/* Espaciado y jerarquía visual de las secciones. */
 .text-blue,.section-tag,.eyebrow {color:#FFAA42!important;}
 /* Compensa el menú fijo en todas las páginas interiores */
+/* Distribución de las páginas interiores. */
 .inner-page {padding-top:92px;min-height:55vh;}
+/* Presentación principal, imágenes y textos destacados. */
 .inner-hero {padding:56px 0 28px;background:radial-gradient(ellipse at 80% 0%,#FF790015,transparent 55%);}
+/* Presentación principal, imágenes y textos destacados. */
 .inner-hero h1 {font-size:clamp(2.35rem,5vw,4.3rem);line-height:1.12;margin:0 0 16px;font-weight:800;}
+/* Presentación principal, imágenes y textos destacados. */
 .inner-hero p {color:#F5F5F5;max-width:760px;}
+/* Presentación principal, imágenes y textos destacados. */
 .inner-hero .eyebrow {font-size:.85rem;letter-spacing:.15em;font-weight:800;margin-bottom:12px;}
+/* Distribución de las páginas interiores. */
 .page-content {padding-top:92px;}
+/* Distribución de las páginas interiores. */
 .page-header {padding:52px 0 60px;}
+/* Espaciado y jerarquía visual de las secciones. */
 .section-space {padding-top:24px;padding-bottom:72px;}
+/* Espaciado y jerarquía visual de las secciones. */
 section[id] {scroll-margin-top:110px;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel {margin-top:72px;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-caption {color:#F5F5F5;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-indicators [data-bs-target] {background-color:#FF7900;}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .feature-card,.plan-cards .card {background:#242424;color:#F5F5F5;border-color:#404040;}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .feature-card p,.plan-cards .card p {color:#B8B8B8;}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card.featured {border-color:#FF7900;box-shadow:0 0 0 1px #FF790055,0 14px 34px #0005;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer {background:#141414;border-top-color:#404040;color:#F5F5F5;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer a:hover {color:#FFAA42;}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer .form-control {background:#242424;border-color:#404040;color:#F5F5F5;}
+/* Botones flotantes y colores de redes sociales. */
 .social-float a {color:#fff!important;}
+/* Botones flotantes y colores de redes sociales. */
 .social-float a.whatsapp,.social-float a.whatsapp:hover {background:#25d366!important;border-color:#25d366!important;color:#fff!important;}
+/* Botones flotantes y colores de redes sociales. */
 .social-float a:not(.whatsapp) {background:linear-gradient(35deg,#feda75 0%,#fa7e1e 25%,#d62976 52%,#962fbf 76%,#4f5bd5 100%)!important;border-color:#d62976!important;color:#fff!important;}
+/* Botones flotantes y colores de redes sociales. */
 .social-float a:hover {filter:brightness(1.1);transform:translateY(-3px);}
+/* Botón flotante para volver arriba. */
 .back-top,.back-top:hover {background:#FF7900;color:#141414;border:1px solid #FFAA42;}
+/* Botón flotante para volver arriba. */
 .back-top:hover {background:#FFAA42;}
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:991.98px) {
+/* Distribución de las páginas interiores. */
  .inner-page,.page-content {padding-top:80px;}
+/* Presentación principal, imágenes y textos destacados. */
  .inner-hero {padding-top:42px;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
  .navbar-collapse {background:#141414;padding:14px;border-radius:0 0 14px 14px;max-height:calc(100vh - 72px);overflow-y:auto;}
+/* Presentación principal, imágenes y textos destacados. */
  .hero-carousel {margin-top:70px;}
 }
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:575.98px) {.inner-hero h1 {font-size:2.35rem;}.inner-hero {padding-top:32px;}.hero-carousel {margin-top:64px;}}
 
 /* Ajustes finales FitGym: navegación, accesibilidad y módulos nuevos */
+/* Variables reutilizables de color; las declaraciones posteriores pueden sobrescribir las anteriores. */
 :root {--fit-orange:#FF7900;--fit-gold:#FFAA42;--fit-cream:#F5F5F5;--fit-charcoal:#242424;--fit-black:#141414;}
+/* Comportamiento general del desplazamiento. */
 html {scroll-padding-top:110px;scroll-behavior:smooth;}
+/* Fondo, tipografía y espaciado general. */
 body {padding-top:84px;}
+/* Presentación principal, imágenes y textos destacados. */
 body:has(.hero-carousel) {padding-top:84px;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar.fixed-top {min-height:76px;}
+/* Distribución de las páginas interiores. */
 .inner-page {padding-top:20px!important;}
+/* Presentación principal, imágenes y textos destacados. */
 .inner-hero {padding-top:48px!important;}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel {margin-top:0!important;}
+/* Identidad visual de la marca. */
 .fit-brand .brand-emblem {font-size:1.35rem;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar .navbar-nav {gap:.25rem!important;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar .nav-link {font-size:.91rem;white-space:nowrap;}
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar .btn-primary {color:#141414!important;font-weight:700;}
+/* Acordeón de preguntas frecuentes. */
 .faq-accordion .accordion-item {background:#242424;border:1px solid #404040;color:#F5F5F5;}
+/* Acordeón de preguntas frecuentes. */
 .faq-accordion .accordion-button {background:#242424;color:#F5F5F5;box-shadow:none;}
+/* Acordeón de preguntas frecuentes. */
 .faq-accordion .accordion-button:not(.collapsed) {background:#FF7900;color:#141414;}
+/* Acordeón de preguntas frecuentes. */
 .faq-accordion .accordion-button::after {filter:grayscale(1) invert(1);}
+/* Acordeón de preguntas frecuentes. */
 .faq-accordion .accordion-body {color:#F5F5F5;}
+/* Espaciado y jerarquía visual de las secciones. */
 .compare-section {background:#242424;}
+/* Tabla de comparación y desplazamiento horizontal. */
 .comparison-result {overflow-x:auto;}
+/* Tabla de comparación y desplazamiento horizontal. */
 .comparison-result table {width:100%;border-collapse:collapse;min-width:480px;}
+/* Tabla de comparación y desplazamiento horizontal. */
 .comparison-result th,.comparison-result td {padding:13px;border:1px solid #404040;color:#F5F5F5;}
+/* Tabla de comparación y desplazamiento horizontal. */
 .comparison-result th {background:#242424;color:#FFAA42;}
+/* Espaciado y jerarquía visual de las secciones. */
 .compare-section .form-select {background-color:#F5F5F5;color:#141414;border:1px solid #FFAA42;}
+/* Apariencia y estados de interacción de los botones. */
 .feature-card .btn {margin-top:10px;}
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:991.98px){body {padding-top:76px;} .navbar-collapse {max-height:calc(100vh - 76px);overflow-y:auto;} .inner-hero {padding-top:34px!important;}}
 
 /* Refinamientos FitGym: tarjetas, fotografías y pie de página */
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card{height:100%;overflow:hidden;display:flex;flex-direction:column;background:#242424;border:1px solid #404040;border-radius:20px}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card img{width:100%;height:300px;object-fit:cover;object-position:center 24%;display:block;transition:transform .35s ease}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card:hover img{transform:scale(1.025)}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card .p-4{display:flex;flex-direction:column;flex:1;gap:8px}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card .trainer-role{color:#FFAA42;font-size:.82rem;letter-spacing:.045em;line-height:1.5}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card h3{font-size:1.5rem;margin:0;color:#F5F5F5}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-card p{flex:1;margin:0;color:#B8B8B8;line-height:1.65}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-email{display:inline-flex;align-items:center;gap:9px;color:#FFAA42;text-decoration:none;font-weight:600;border-top:1px solid #404040;padding-top:14px;margin-top:12px}
+/* Tarjetas, fotografías e información de entrenadores. */
 .trainer-email:hover{color:#fff}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card,.plan-cards .card.featured{background:#242424!important;color:#F5F5F5!important;border:1px solid #404040!important;box-shadow:0 12px 30px #0004!important;min-height:100%;border-radius:20px}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card .card-body{height:100%;display:flex;flex-direction:column;gap:10px;padding:30px}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card h3,.plan-cards .card .price{color:#F5F5F5!important}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .card .plan-label{color:#FFAA42!important}
+/* Apariencia y estados de interacción de los botones. */
 .plan-cards .card .btn{margin-top:auto;color:#141414!important;font-weight:700;background:#FF7900!important;border-color:#FF7900!important}
+/* Apariencia y estados de interacción de los botones. */
 .plan-cards .card .btn:hover{background:#FFAA42!important;border-color:#FFAA42!important}
+/* Tarjetas de membresías y presentación uniforme de los planes. */
 .plan-cards .popular-tag{background:#FF7900;color:#141414}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-item{height:clamp(490px,75vh,760px);overflow:hidden}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-item img{height:100%;width:100%;object-fit:cover;object-position:center 38%;filter:brightness(.38)}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-item:nth-child(2) img{object-position:center 43%}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-item:nth-child(3) img{object-position:center 30%}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-item:nth-child(4) img{object-position:center 35%}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-caption{max-width:760px}
+/* Presentación principal, imágenes y textos destacados. */
 .hero-carousel .carousel-caption .eyebrow{color:#FFAA42!important}
+/* Distribución, enlaces e identidad del pie de página. */
 .fit-footer.footer-expanded{background:#141414!important;padding:58px 0 26px;color:#F5F5F5;border-top:1px solid #404040}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-brand-block{padding:10px 0 35px;border-bottom:1px solid #404040}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-logo{font-size:2.5rem;font-weight:900;letter-spacing:.045em;color:#fff!important;display:inline-flex;align-items:center;gap:12px;text-decoration:none}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-logo .brand-emblem{background:#FF7900;color:#fff}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-brand-block p{color:#B8B8B8;margin:16px auto 22px}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-socials{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-socials a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#F5F5F5;color:#141414!important;font-size:1.3rem;transition:transform .2s,background .2s}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-socials a:hover{background:#FFAA42;transform:translateY(-3px)}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-main{padding-top:40px;padding-bottom:28px}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-main h3{font-size:1.15rem;color:#fff;margin-bottom:18px}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-main p,.footer-main .footer-links a{color:#B8B8B8;line-height:1.65}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-main .footer-links{display:flex;flex-direction:column;gap:12px}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-main .footer-links a:hover{color:#FFAA42}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-note{font-size:.78rem;color:#B8B8B8!important;margin-top:12px}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-expanded .footer-bottom{border-top:1px solid #404040;padding-top:22px;margin-top:8px;color:#B8B8B8;font-size:.88rem}
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:767px){.trainer-card img{height:270px}.hero-carousel .carousel-item{height:540px}.hero-carousel .carousel-caption{left:12%;right:12%}.footer-main{padding-top:28px}}
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:480px){.hero-carousel .carousel-item{height:520px}.hero-carousel .carousel-caption h2{font-size:2.25rem}.footer-logo{font-size:2rem}}
 
 /* Carrusel: imagenes externas panoramicas, sin deformaciones */
+/* Dimensiones, encuadre y controles del carrusel. */
 #fitCarousel .carousel-item > img { display:block; width:100%; height:clamp(390px, 68vh, 760px); object-fit:cover; object-position:center 42%; }
+/* Dimensiones, encuadre y controles del carrusel. */
 #fitCarousel .carousel-item::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.18)); pointer-events:none; }
+/* Dimensiones, encuadre y controles del carrusel. */
 #fitCarousel .carousel-caption { z-index:2; }
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:576px){#fitCarousel .carousel-item > img {height:520px;object-position:center;} #fitCarousel .carousel-item::after{background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,.2));}}
 
+/* Variables reutilizables de color; las declaraciones posteriores pueden sobrescribir las anteriores. */
 :root { --bs-primary-rgb: 255, 121, 0; }
+/* Apariencia y estados de interacción de los botones. */
 .btn-primary:hover, .btn-blue:hover, .plan-cards .card .btn:hover { background: #FFAA42 !important; border-color: #FFAA42 !important; color: #141414 !important; }
+/* Apariencia y estados de interacción de los botones. */
 .btn-primary:focus-visible, .btn-blue:focus-visible { outline: 2px solid #FFAA42; outline-offset: 3px; }
+/* Apariencia y estados de interacción de los botones. */
 .btn-primary:active, .btn-primary.active { background: #E56700 !important; border-color: #E56700 !important; color: #141414 !important; }
+/* Botón flotante para volver arriba. */
 .back-top, .back-top:hover { color: #141414; }
 .text-muted, .text-secondary { color: #B8B8B8 !important; }
 
+/* Apariencia de las ventanas emergentes. */
 .membership-modal {background:#242424;color:#F5F5F5;border:1px solid #555;}
+/* Apariencia de las ventanas emergentes. */
 .membership-modal .modal-header {border-color:#555;}
 .membership-summary {background:#141414;border-left:4px solid #FF7900;padding:1rem;border-radius:.5rem;}
 .membership-summary #selectedPrice {color:#FFAA42;}
+/* Apariencia y estados de los campos del formulario. */
 .membership-modal .form-control {background:#141414;color:#F5F5F5;border-color:#777;}
 
+/* Navegación fija, enlaces, marca y menú adaptable. */
 .navbar-brand.fit-brand {gap:.55rem; padding-block:0; white-space:nowrap;}
+/* Tamaño y presentación del logo. */
 .fit-brand .fitgym-nav-logo {width:52px;height:40px;object-fit:contain;display:block;border-radius:5px;}
+/* Identidad visual de la marca. */
 .fit-brand .fitgym-wordmark {color:#F5F5F5;font-weight:900;letter-spacing:.035em;}
+/* Identidad visual de la marca. */
 .fit-brand .fitgym-wordmark strong {color:#FF7900;}
+/* Distribución, enlaces e identidad del pie de página. */
 .footer-logo .fitgym-footer-logo {display:block;width:min(260px,75vw);height:auto;border-radius:8px;}
+/* Reglas responsive: ajustan el diseño según el ancho de pantalla. */
 @media(max-width:480px){.fit-brand .fitgym-nav-logo{width:44px;height:34px}.fit-brand .fitgym-wordmark{font-size:1.15rem}}

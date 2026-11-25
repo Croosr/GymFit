@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- Metadatos, título, estilos externos y recursos de identidad. --><head>
+<!-- Codificación UTF-8 para caracteres en español. --><meta charset="utf-8"/>
+<!-- Adapta el ancho de la página a la pantalla del dispositivo. --><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="FitGym: entrenamiento, bienestar y comunidad." name="description"/>
 <title>Membresías | FitGym</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-<link href="CCS/estilos.css" rel="stylesheet"/>
-<link rel="icon" type="image/png" href="IMG/favicon.png">
+<!-- Bootstrap 5: cuadrícula, componentes y utilidades responsive. --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Biblioteca de iconos de Bootstrap. --><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<!-- Hoja de estilos propia: personaliza Bootstrap y la identidad visual. --><link href="CCS/estilos.css" rel="stylesheet"/>
+<!-- Icono de la pestaña del navegador. --><link rel="icon" type="image/png" href="IMG/favicon.png">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-glass">
-<div class="container"><a class="navbar-brand fw-bold fit-brand" href="index.html"><img class="fitgym-nav-logo" src="IMG/logo-fitgym-icon.webp" alt="" width="52" height="40"><span class="fitgym-wordmark">FIT<strong>GYM</strong></span></a><button aria-controls="menu" aria-expanded="false" aria-label="Abrir menú" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="menu">
+<!-- Menú fijo compartido: permite navegar entre las páginas. --><nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-glass">
+<div class="container"><!-- Logo compacto y enlace de regreso al inicio. --><a class="navbar-brand fw-bold fit-brand" href="index.html"><img class="fitgym-nav-logo" src="IMG/logo-fitgym-icon.webp" alt="" width="52" height="40"><span class="fitgym-wordmark">FIT<strong>GYM</strong></span></a><button aria-controls="menu" aria-expanded="false" aria-label="Abrir menú" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<!-- Contenedor del menú adaptable de Bootstrap. --><div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
 <li class="nav-item"><a class="nav-link" href="nosotos.html">Conoce FitGym</a></li>
@@ -28,15 +28,15 @@
 </div>
 </div>
 </nav>
-<main class="inner-page">
-<section class="inner-hero">
+<!-- Contenido principal específico de esta página. --><main class="inner-page">
+<!-- Encabezado introductorio de la página interior. --><section class="inner-hero">
 <div class="container">
 <p class="eyebrow">MEMBRESÍAS FITGYM</p>
 <h1>Tu objetivo merece<br/>un buen <span class="text-blue">plan.</span></h1>
 <p>Compara las opciones y elige la que mejor se adapte a tu rutina.</p>
 </div>
 </section>
-<section class="section-space">
+<!-- Bloque de contenido organizado mediante la cuadrícula de Bootstrap. --><section class="section-space">
 <div class="container">
 <div class="row g-4">
 <div class="col-md-4 plan-cards">
@@ -83,31 +83,31 @@
 <div class="notice-box mt-4">Consulta con nuestro equipo la disponibilidad, los beneficios y las tarifas vigentes de cada membresía.</div>
 </div>
 </section>
-<section class="section-space compare-section"><div class="container"><p class="eyebrow">COMPARA ANTES DE ELEGIR</p><h2>Compara nuestras membresías</h2><p class="muted-copy">Selecciona dos planes para ver sus beneficios.</p><div class="row g-3 mb-3"><div class="col-md-5"><label class="form-label" for="compareA">Primer plan</label><select class="form-select" id="compareA"><option value="Basico">Básico</option><option value="Premium">Premium</option><option value="VIP">VIP</option></select></div><div class="col-md-5"><label class="form-label" for="compareB">Segundo plan</label><select class="form-select" id="compareB"><option value="Basico">Básico</option><option selected="" value="Premium">Premium</option><option value="VIP">VIP</option></select></div></div><div aria-live="polite" class="comparison-result" id="comparisonResult"></div><p class="small muted-copy mt-3">Las tarifas y condiciones pueden variar. Solicita información actualizada antes de inscribirte.</p></div></section></main>
-<div class="modal fade" id="membershipModal" tabindex="-1" aria-labelledby="membershipTitle" aria-hidden="true">
+<!-- Comparador interactivo de precios y beneficios de los planes. --><section class="section-space compare-section"><div class="container"><p class="eyebrow">COMPARA ANTES DE ELEGIR</p><h2>Compara nuestras membresías</h2><p class="muted-copy">Selecciona dos planes para ver sus beneficios.</p><div class="row g-3 mb-3"><div class="col-md-5"><label class="form-label" for="compareA">Primer plan</label><select class="form-select" id="compareA"><option value="Basico">Básico</option><option value="Premium">Premium</option><option value="VIP">VIP</option></select></div><div class="col-md-5"><label class="form-label" for="compareB">Segundo plan</label><select class="form-select" id="compareB"><option value="Basico">Básico</option><option selected="" value="Premium">Premium</option><option value="VIP">VIP</option></select></div></div><div aria-live="polite" class="comparison-result" id="comparisonResult"></div><p class="small muted-copy mt-3">Las tarifas y condiciones pueden variar. Solicita información actualizada antes de inscribirte.</p></div></section></main>
+<!-- Ventana modal de inscripción sin abandonar la página de membresías. --><div class="modal fade" id="membershipModal" tabindex="-1" aria-labelledby="membershipTitle" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content membership-modal">
 <div class="modal-header"><h2 class="modal-title fs-4" id="membershipTitle">Solicita tu membresía</h2><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
 <div class="modal-body"><div class="membership-summary mb-3"><strong id="selectedMembership"></strong><div id="selectedPrice"></div></div>
-<form id="membershipForm" novalidate><input type="hidden" name="plan" id="membershipPlan">
+<!-- Formulario de solicitud: el plan se asigna desde el botón seleccionado. --><form id="membershipForm" novalidate><!-- Campo oculto para transmitir información auxiliar del formulario. --><input type="hidden" name="plan" id="membershipPlan">
 <div class="mb-3"><label for="memberName" class="form-label">Nombre completo</label><input class="form-control" id="memberName" name="nombre" autocomplete="name" required minlength="3" maxlength="150"></div>
 <div class="mb-3"><label for="memberEmail" class="form-label">Correo electrónico</label><input class="form-control" id="memberEmail" name="email" type="email" autocomplete="email" required maxlength="254"></div>
 <div class="mb-3"><label for="memberPhone" class="form-label">Teléfono</label><input class="form-control" id="memberPhone" name="telefono" type="tel" autocomplete="tel" required minlength="7" maxlength="18"></div>
 <div class="form-check mb-3"><input class="form-check-input" type="checkbox" name="consentimiento" value="si" id="memberConsent" required><label class="form-check-label" for="memberConsent">Acepto el tratamiento de mis datos para gestionar esta solicitud.</label></div>
 <p class="small">El equipo confirmará la tarifa, disponibilidad y activación. No se realiza ningún cobro en esta página.</p>
 <button class="btn btn-primary w-100" type="submit">Solicitar membresía</button><div id="membershipStatus" role="status" aria-live="polite"></div></form></div></div></div></div>
-<footer class="fit-footer footer-expanded"><div class="container">
+<!-- Pie de página compartido: identidad, enlaces, redes y suscripción. --><footer class="fit-footer footer-expanded"><div class="container">
 <div class="footer-brand-block text-center"><a class="footer-logo" href="index.html"><img class="fitgym-footer-logo" src="IMG/logo-fitgym.webp" alt="FitGym — Gimnasio y Fitness" loading="lazy"></a><p>Entrena a tu ritmo. Descubre un espacio para avanzar.</p><div class="footer-socials"><a aria-label="Instagram" href="https://www.instagram.com/aizen_soske33/" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i></a><a aria-label="Correo y contacto" href="contacto.html"><i class="bi bi-envelope-fill"></i></a><a aria-label="WhatsApp (número por configurar)" href="https://wa.me/573000000000" rel="noopener noreferrer" target="_blank"><i class="bi bi-whatsapp"></i></a></div></div>
 <div class="row g-4 footer-main"><div class="col-lg-3 col-sm-6"><h3>FITGYM</h3><div class="footer-links"><a href="nosotos.html">Conoce FitGym</a><a href="entrenadores.html">Nuestro Equipo</a><a href="servicios.html">Zonas de Entrenamiento</a></div></div>
 <div class="col-lg-3 col-sm-6"><h3>Membresías</h3><div class="footer-links"><a href="planes.html">Ver todos los planes</a><a href="planes.html?plan=Basico">Plan Básico</a><a href="planes.html?plan=Premium">Plan Premium</a><a href="planes.html?plan=VIP">Plan VIP</a></div></div>
 <div class="col-lg-3 col-sm-6"><h3>Atención y ayuda</h3><div class="footer-links"><a href="contacto.html">Contáctanos</a><a href="ayuda.html">Preguntas frecuentes</a><a href="contacto.html#ubicacion">Ubicación y mapa</a></div></div>
-<div class="col-lg-3 col-sm-6"><h3>Conecta con FitGym</h3><p>Entérate de nuestras novedades y actividades.</p><form class="newsletter-form" novalidate=""><label class="visually-hidden" for="newsletter-email">Correo electrónico</label><div class="input-group"><input class="form-control" id="newsletter-email" name="email" placeholder="Tu correo electrónico" required="" type="email"/><button class="btn btn-primary" type="submit">Suscribirme</button></div><label class="small mt-2"><input type="checkbox" name="consentimiento" value="si" required> Acepto recibir novedades por correo.</label><div class="newsletter-status small mt-2" role="status"></div></form><p class="small footer-note">Puedes suscribirte para recibir novedades de FitGym.</p></div></div>
-<div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span class="current-year"></span> FitGym. Todos los derechos reservados.</span><span>Bienestar · Entrenamiento · Comunidad</span></div></div></footer>
-<div class="social-float"><a aria-label="WhatsApp (configurar número real)" class="whatsapp" href="https://wa.me/573000000000" rel="noopener noreferrer" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a><a aria-label="Abrir Instagram" href="https://www.instagram.com/aizen_soske33/" rel="noopener noreferrer" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+<div class="col-lg-3 col-sm-6"><h3>Conecta con FitGym</h3><p>Entérate de nuestras novedades y actividades.</p><!-- Formulario de suscripción: JavaScript genera el TXT y envía el correo. --><form class="newsletter-form" novalidate=""><label class="visually-hidden" for="newsletter-email">Correo electrónico</label><div class="input-group"><input class="form-control" id="newsletter-email" name="email" placeholder="Tu correo electrónico" required="" type="email"/><button class="btn btn-primary" type="submit">Suscribirme</button></div><label class="small mt-2"><input type="checkbox" name="consentimiento" value="si" required> Acepto recibir novedades por correo.</label><div class="newsletter-status small mt-2" role="status"></div></form><p class="small footer-note">Puedes suscribirte para recibir novedades de FitGym.</p></div></div>
+<!-- Derechos reservados y año actualizado por JavaScript. --><div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span class="current-year"></span> FitGym. Todos los derechos reservados.</span><span>Bienestar · Entrenamiento · Comunidad</span></div></div></footer>
+<!-- Accesos flotantes a WhatsApp e Instagram. --><div class="social-float"><a aria-label="WhatsApp (configurar número real)" class="whatsapp" href="https://wa.me/573000000000" rel="noopener noreferrer" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a><a aria-label="Abrir Instagram" href="https://www.instagram.com/aizen_soske33/" rel="noopener noreferrer" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
 </div>
-<button aria-label="Volver al inicio" class="back-top" id="backTop" title="Volver al inicio" type="button">
+<!-- Botón para regresar suavemente a la parte superior. --><button aria-label="Volver al inicio" class="back-top" id="backTop" title="Volver al inicio" type="button">
 <i class="bi bi-arrow-up"></i>
 </button>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="JS/codigo.js"></script>
+<!-- JavaScript de Bootstrap: activa carrusel, modales, acordeones y menú. --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Lógica propia de FitGym: formularios, TXT, correo y eventos. --><script src="JS/codigo.js"></script>
 </body>
 </html>
