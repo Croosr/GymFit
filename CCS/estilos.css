@@ -855,3 +855,10 @@ body:has(.hero-carousel) {padding-top:84px;}
 .membership-summary {background:#141414;border-left:4px solid #FF7900;padding:1rem;border-radius:.5rem;}
 .membership-summary #selectedPrice {color:#FFAA42;}
 .membership-modal .form-control {background:#141414;color:#F5F5F5;border-color:#777;}
+
+.navbar-brand.fit-brand {gap:.55rem; padding-block:0; white-space:nowrap;}
+.fit-brand .fitgym-nav-logo {width:52px;height:40px;object-fit:contain;display:block;border-radius:5px;}
+.fit-brand .fitgym-wordmark {color:#F5F5F5;font-weight:900;letter-spacing:.035em;}
+.fit-brand .fitgym-wordmark strong {color:#FF7900;}
+.footer-logo .fitgym-footer-logo {display:block;width:min(260px,75vw);height:auto;border-radius:8px;}
+@media(max-width:480px){.fit-brand .fitgym-nav-logo{width:44px;height:34px}.fit-brand .fitgym-wordmark{font-size:1.15rem}}
